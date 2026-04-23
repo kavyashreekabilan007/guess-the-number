@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+
+}
+
+#again-box {
+
+    width: fit-content;
+    height: fit-content;
+}
+
+#again-text {
+    color: black;
+}
