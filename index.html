@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="guess.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Patric+Hand&display=swap" rel="stylesheet">
+</head>
+
+<body align="center">
+
+
+    </div>
+    <p id="header">Guess My Number!</p>
+    <hr>
+    <p id="text">&lt;I'm thinking a number between 1 and 100&gt;</p>
+    <hr>
+
+
+    <div>
+        <div>
+            <div>
+                <input type=" number" id="guessedNumber">
+
+                <button id=check-button onclick="guessTheNumber()">Guess!</button>
+            </div>
+        </div>
+        <div>
+            <div id="tape1"></div>
+            <div id="box1">
+                <p id="clue"></p>
+            </div>
+            <div id="tape2"></div>
+
+
+            <p>High Score: <span id="highscore">0</span></p>
+        </div>
+
+
+
+        <div class="container">
+            <div id="box">
+                <p>Guessed numbers:
+                    <span id="guessedNumbers"></span>
+                </p>
+            </div>
+
+            <div id="box2">
+                <p id="numberOfGuesses">?
+                <p>/20</p>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <br>
+    <button onclick="again()" id="restart-button">Restart game</button>
+
+
+
+
+</body>
+
+</html>

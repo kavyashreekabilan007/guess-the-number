@@ -1,0 +1,132 @@
+body {
+
+    margin: 0px;
+    font-family: 'Patric Hand', cursive;
+    background: #fffdf7;
+    background-image: linear-gradient(#eaeeaa 1px, transparent 1px),
+        /**light yello-green stripe,1px thick,transparent space after the line**/
+        linear-gradient(90deg, #f1f1f1 1px, transparent 1px);
+    /**vertical light gray stripe **/
+    background-size: 100% 28px, 28px 28px;
+    /**creates a check boxes**/
+    color: #1b1b1b;
+}
+
+#guessedNumber {
+    border: 2px dashed #1e3a8a;
+    border-radius: 12px;
+    position: relative;
+    height: 40px;
+    width: 40%;
+}
+
+#check-button {
+    background: #e8f1ff;
+    border: 2px dashed #1e3a8a;
+    border-radius: 12px;
+    padding: 10px 18px;
+    color: #1e3a8a;
+    font-weight: bold;
+    font-family: 'Patric Hand', 'Courier New', monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    width: 20%;
+    transition: all 0.1s ease;
+    text-shadow: 0 0 3px rgba(30, 58, 138, 0.5);
+    box-shadow:
+        inset -2px -2px 0 rgba(0, 0, 0, 0.05),
+        0 0 10px rgba(30, 58, 138, 0.3);
+    background-image: repeating-linear-gradient(-45deg, rgba(30, 58, 138, 0.08) 0 6px,
+            transparent 6px 12px);
+}
+
+#header {
+    font-size: 20px;
+    color: rgb(38, 38, 85);
+}
+
+#text {
+    font-size: 20px;
+
+}
+
+hr {
+    border-color: rgb(230, 114, 191);
+
+}
+
+#box1 {
+    background-color: #fff8dc;
+    border: 2px solid #e0c689;
+    border-radius: 12px;
+    margin-left: 90px;
+    margin-top: 25px;
+    position: relative;
+    width: 70%;
+    height: 50px;
+
+
+}
+
+#tape1 {
+    width: 70px;
+    height: 22px;
+    background: #ffe9b3;
+    border: 1px solid #e0c689;
+    position: absolute;
+    transform: rotate(-35deg);
+
+    bottom: 245px;
+    z-index: 2;
+    left: 70px;
+}
+
+
+#tape2 {
+    width: 70px;
+    height: 22px;
+    background: #ffe9b3;
+    border: 1px solid #e0c689;
+    position: absolute;
+    transform: rotate(35deg);
+    z-index: 2;
+    right: 70px;
+    bottom: 250px;
+}
+
+#box {
+    height: 100px;
+    width: 160px;
+    border: 1px solid rgb(60, 59, 59);
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    /* 🔥 centers horizontally */
+    align-items: center;
+    /* 🔥 aligns vertically */
+
+    gap: 20px;
+    /* space between boxes */
+    margin-top: 20px;
+}
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(60, 59, 59);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+}
+
+#restart-button {
+    height: 40px;
+    width: 200px;
+}
