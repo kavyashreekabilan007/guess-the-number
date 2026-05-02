@@ -1,7 +1,7 @@
 let guessedNumberList = [];
-let highscore = Infinity;
+let highscore = 20;
 let score = 0;
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = 40//Math.floor(Math.random() * 100) + 1;
 
 function guessTheNumber() {
     let guessedNumber = Number(document.getElementById("guessedNumber").value);// Get the guessed number from the input field
@@ -25,6 +25,8 @@ function guessTheNumber() {
         if (score < highscore) {
             highscore = score;
             document.getElementById("highscore").innerHTML = highscore;
+            document.getElementById("badge").style.display = "block";
+            document.getElementById("clue").style.color = "rgb(150, 133, 91)";
 
         }
         return;//stopping user to guess after winning the game
@@ -33,17 +35,19 @@ function guessTheNumber() {
         clue = "higher";
         document.getElementById("clue").innerHTML = clue;
         document.getElementById("guessedNumber").value = "";
+        document.getElementById("clue").style.color = "rgb(148, 84, 84)";
     }
     else {
         clue = "lower";
         document.getElementById("clue").innerHTML = clue;
         document.getElementById("guessedNumber").value = "";
+        document.getElementById("clue").style.color = "rgb(76, 168, 95)";
     }
 
 
 }
 function again() {
-    randomNumber = Math.floor(Math.random() * 100) + 1;//generate new random number
+    randomNumber = 40//Math.floor(Math.random() * 100) + 1;//generate new random number
     guessedNumberList = [];
     document.getElementById("guessedNumbers").innerHTML = "";
     score = 0;

@@ -65,6 +65,13 @@ hr {
     position: relative;
     width: 70%;
     height: 50px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* This centers everything horizontally */
+    gap: 5px;
 
 
 }
@@ -149,4 +156,22 @@ hr {
         0 0 10px rgba(30, 58, 138, 0.3);
     background-image: repeating-linear-gradient(-45deg, rgba(30, 58, 138, 0.08) 0 6px,
             transparent 6px 12px);
+}
+
+#badge {
+    width: 40px;
+    height: auto;
+    padding-left: 30px;
+    display: none;
+    z-index: 2;
+}
+
+#clue {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 30px;
+
+
 }
