@@ -1,7 +1,7 @@
 let guessedNumberList = [];
 let highscore = 20;
 let score = 0;
-let randomNumber = 40//Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 let starInterval = null;
 let winaudio = new Audio("resource/mixkit-instant-win-2021.wav");
 let wrongaudio = new Audio("resource/mixkit-game-show-wrong-answer-buzz-950.wav");
