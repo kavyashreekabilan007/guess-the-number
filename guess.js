@@ -1,7 +1,7 @@
 let guessedNumberList = [];
 let highscore = 20;
 let score = 0;
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = 40//Math.floor(Math.random() * 100) + 1;
 let starInterval = null;
 let winaudio = new Audio("resource/mixkit-instant-win-2021.wav");
 let wrongaudio = new Audio("resource/mixkit-game-show-wrong-answer-buzz-950.wav");
@@ -77,20 +77,23 @@ function again() {
     document.querySelector(".stars").innerHTML = "";
 }
 function createStar() {
-    const star = document.createElement("div");
-    star.classList.add("star");
+    const star = document.createElement("div");//creating div
+    star.classList.add("star");//
 
-    const img = document.createElement("img");
+    const img = document.createElement("img");//creates img element
     img.src = "resource/star.png";
 
-    star.appendChild(img);
+    star.appendChild(img);//puts the img inside the star
+    //it becomes<div class="star">
+    //<img src="">
+    // </div>
 
-    star.style.left = Math.random() * 100 + "vw";
-    star.style.animationDuration = (Math.random() * 3 + 2) + "s";
+    star.style.left = Math.random() * 100 + "vw";//placing star across the screen in random width,left positions an element horiontally from left side of the screen
+    star.style.animationDuration = (Math.random() * 3 + 2) + "s";//random animation speed between 2s to 5s.
 
-    document.querySelector(".stars").appendChild(star);
+    document.querySelector(".stars").appendChild(star);//adding stars inside the stars div.
 
     setTimeout(() => {
-        star.remove();
-    }, 5000);
+        star.remove();//removing stars after 3s
+    }, 3000);//it prevents star from piling up
 }
