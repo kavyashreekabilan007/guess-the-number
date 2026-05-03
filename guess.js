@@ -60,7 +60,7 @@ function guessTheNumber() {
 function again() {
     randomNumber = Math.floor(Math.random() * 100) + 1;//generate new random number
     guessedNumberList = [];
-    ocument.getElementById("badge").style.display = "none";
+    document.getElementById("badge").style.display = "none";
     document.getElementById("guessedNumbers").innerHTML = "";
     score = 0;
     document.getElementById("numberOfGuesses").innerHTML = score;
@@ -96,4 +96,12 @@ function createStar() {
     setTimeout(() => {
         star.remove();//removing stars after 3s
     }, 3000);//it prevents star from piling up
+}
+window.onload = function () {//run this function after the page is fully loaded
+    const input = document.getElementById("guessedNumber");
+    input.addEventListener("keydown", function (event) {//whenever the key is pressed while the user has typed the input,run this function
+        if (event.key === "Enter") {
+            guessTheNumber();
+        }
+    });
 }
